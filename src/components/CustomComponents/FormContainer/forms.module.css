@@ -1,0 +1,68 @@
+/* agent contact form css */
+
+.contact_fomrContainer {
+  background: var(--lightBG);
+  padding: 20px;
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow-medium);
+}
+
+.agentContactCard {
+  padding: 8px;
+  border-radius: var(--main-border-radius);
+  border: 1px solid var(--light-border);
+  box-shadow: var(--box-shadow-small);
+}
+
+.agent_img {
+  width: 66px;
+  height: 80px;
+  border-radius: var(--main-border-radius);
+}
+
+.agent_img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: var(--main-border-radius);
+}
+
+.agent_BadgeLabel {
+  font-size: var(--regular-small-font);
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: var(--small-letter-spacing);
+  color: var(--heading-font-color);
+  text-transform: capitalize;
+}
+
+/* inquiery form css */
+.send_enquiry_section {
+  background-color: var(--light-bg3-color);
+  padding: 24px;
+  margin-left: 20px;
+  border: 1px solid var(--light-border);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px #00000014;
+}
+
+.send_enquiry_section :global(.mantine-TextInput-label),
+.send_enquiry_section :global(.mantine-Textarea-label),
+.emi_calculator :global(.mantine-NumberInput-label) {
+  color: var(--heading-font-color);
+  padding: 10px 0px;
+}
+
+.send_enquiry_section .radioGroup :global(.mantine-RadioGroup-root) {
+  display: flex;
+  align-items: center;
+}
+
+.radioGroup :global(.mantine-RadioGroup-label) {
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+#property-inquiry-form {
+  scroll-margin-top: 500px;
+}

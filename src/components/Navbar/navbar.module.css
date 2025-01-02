@@ -1,0 +1,195 @@
+.header {
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--light-border);
+  flex-wrap: none;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0px;
+}
+
+.searchHeaderNav_Group {
+  width: calc(100% - 180px);
+  height: 50px;
+}
+
+.searchBox {
+  border-radius: 4px;
+  /* max-width: 828px; */
+  min-width: 450px;
+  width: calc(100% - 400px);
+}
+
+.main_logolink img {
+  margin-bottom: -10px;
+}
+
+.groupData {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.navbar_link {
+  text-decoration: none;
+  padding: 1rem;
+  color: #000;
+}
+
+.navbar_link.active {
+  color: #1e1e82;
+  /* or any color indicating active state */
+  font-weight: bold;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 6px 2px;
+  text-decoration: none;
+  color: var(--heading-font-color);
+  font-weight: var(--regular-font-weight);
+  font-size: var(--regular-font);
+  border-bottom: rem(2px) solid transparent;
+  transition:
+    border-color 100ms ease,
+    color 100ms ease;
+}
+
+.link[data-active] {
+  font-weight: 600;
+  border-bottom-color: var(--primary-color);
+}
+
+.link:hover {
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(240, 246, 255);
+  border-radius: 4px;
+}
+
+.addPropertyBtn,
+.addPropertyBtn:hover {
+  background: var(--primary-color);
+  height: 42px;
+  padding: 8px 16px;
+  gap: 8px;
+  border-radius: var(--main-border-radius);
+}
+
+.signupBtn,
+.signupBtn:hover {
+  background: var(--secondary-dark);
+  height: 42px;
+
+  border: 1px solid var(--secondary-dark);
+  padding: 8px 16px;
+  color: var(--white-color);
+  gap: 8px;
+  border-radius: var(--main-border-radius);
+}
+
+.headerAddPropertInner {
+  font-size: var(--regular-font);
+  font-weight: var(--medium-font-weight);
+  line-height: 25.6px;
+  letter-spacing: var(--letter-spacing-1);
+  color: var(--heading-font-color);
+}
+.addPropertyBtnFree,
+.addPropertyBtnFree:hover {
+  color: var(--heading-font-color);
+  background: transparent;
+}
+.addPropertyBtnFreeSearch,
+.addPropertyBtnFreeSearch:hover {
+  color: var(--white-color);
+  background: transparent;
+}
+.headerAddPropertSection {
+  margin-right: 8px;
+}
+
+.headerUnstyledAvatar {
+  background: rgb(255, 255, 255);
+}
+
+.searchTag {
+  max-width: 100%;
+  width: calc(100% - 50px);
+  height: 40px;
+  overflow-y: scroll;
+}
+
+.headerSelectInput {
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+
+/* MODAL CSS */
+.authForm_modalHeader {
+  display: none;
+}
+
+.customModalBody {
+  padding-top: 20px;
+  position: relative;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hederSeclectInput {
+  border: none;
+  padding-inline: 0;
+}
+
+.headerCitySelect_input {
+  color: var(--heading-font-color);
+}
+
+.DrawerLeftBar {
+  background-color: var(--lightBG);
+}
+
+.headerContactModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  /* border: 1px solid black; */
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .addPropertyBtn,
+  .addPropertyBtn:hover {
+    padding: 8px;
+  }
+
+  .headerAddPropertInner,
+  .headerAddPropertInnerSearch {
+    font-size: var(--regular-small-font);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    padding: 30px 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    padding: 25px 5px;
+  }
+}

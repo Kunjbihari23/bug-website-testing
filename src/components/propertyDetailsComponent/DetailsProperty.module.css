@@ -1,0 +1,544 @@
+.propertyTextH4 {
+  color: var(--heading-font-color);
+}
+
+.breadcrumbs_rootClass {
+  flex-wrap: wrap;
+}
+
+.videoOfPropertyDetails {
+  width: 100%;
+  height: 300px;
+}
+
+.divofoverview {
+  border-bottom: 1px solid #dcddde;
+}
+
+.overView_GridInner {
+  margin: 0;
+  width: 100%;
+}
+
+.placeDiv {
+  border: 1px solid #dcddde;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.ViewPropertyDiv {
+  background: linear-gradient(to bottom, #bae3ff 0%, #4ab4fa 100%);
+  padding: 53px;
+  border-radius: 4px;
+}
+
+.popularProperty {
+  background-color: #f0effb;
+  padding: 22px 24px 22px 14px;
+  border-radius: 4px;
+}
+
+.placeDescDiv {
+  /* padding: 12px; */
+  background-color: white;
+  border-radius: 4px;
+}
+
+/* .placeDescDiv img {
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+} */
+
+.embla__Popular_slide {
+  flex: 0 0 260px;
+  min-width: 0;
+  /* padding-left: var(--slide-spacing); */
+  height: 100%;
+  display: flex;
+  grid-area: 8px;
+  border-radius: 4px;
+}
+
+.embla__Popular_slide img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.embla__Popular_slide__number {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+}
+
+/* ExploreNeighbourhood css*/
+.ExploreNeighbourhood {
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid #dcddde;
+  margin: 24px 0;
+}
+
+.embla__ExploreNeighbour_slide {
+  flex: 0 0 100px;
+  min-width: 0;
+  /* padding-left: var(--slide-spacing); */
+  height: 100%;
+  display: flex;
+  grid-area: 8px;
+  border-radius: 4px;
+}
+
+.embla__dots {
+  display: none;
+}
+
+/* location css */
+.gridLocationImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bgProperty {
+  background-color: #f0f9ff;
+  padding: 13px;
+}
+
+/* localaty Review Css */
+
+.localityReview {
+  background-color: var(--lightBG);
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+.localityReview_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.localityReview_rating {
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.localityReview_rate {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 10px 0px;
+  margin: 10px 0px;
+}
+
+.localityReview_mention {
+  margin: 10px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--light-border);
+}
+
+.likeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.localityReview_mention_like {
+  background-color: var(--lightSkyBlue);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.localityReview_mention_more {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.localityReview_feedback_container {
+  padding: 20px 20px 20px 0px;
+  border-radius: 8px;
+}
+
+.localityReview_feedback_container :global(.mantine-Card-root) {
+  border: 1px solid var(--light-border);
+}
+
+.localityReview_card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.localityReview_card_header img {
+  border-radius: 50%;
+}
+
+.star_rate {
+  border: 1px solid var(--light-border);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.localityReview_likes p,
+.localityReview_dislikes p {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.send_enquiry_section {
+  background-color: var(--light-bg3-color);
+  padding: 24px;
+  margin-left: 20px;
+  border: 1px solid var(--light-border);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px #00000014;
+}
+
+.send_enquiry_section :global(.mantine-TextInput-label),
+.send_enquiry_section :global(.mantine-Textarea-label),
+.emi_calculator :global(.mantine-NumberInput-label) {
+  color: var(--heading-font-color);
+  padding: 10px 0px;
+}
+
+.send_enquiry_section .radioGroup :global(.mantine-RadioGroup-root) {
+  display: flex;
+  align-items: center;
+}
+
+.radioGroup :global(.mantine-RadioGroup-label) {
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.emi_calculator {
+  background-color: var(--light-bg3-color);
+  padding: 24px;
+  border: 1px solid var(--light-border);
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.stickySection {
+  position: sticky;
+  top: 180px;
+  margin-bottom: 20px;
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+.carousal_slide_container {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  box-shadow: var(--box-shadow-small);
+}
+
+.cardImgSlider {
+  position: relative;
+}
+
+.propertyDetail_carousal {
+  width: 100%;
+  height: 100%;
+}
+.video_container {
+  width: 100%;
+  min-height: 450px;
+  max-height: 450px;
+}
+
+.carousal_slide_container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.property_CarouselImg {
+  border-radius: 4px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0.7;
+  filter: blur(8px);
+  -webkit-filter: blur(10px);
+}
+.property_CarouselImgNoImage {
+  border-radius: 4px;
+  min-height: 450px;
+}
+
+.carousalAction_container {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  padding-inline: 20px;
+  width: 100%;
+  z-index: 99;
+}
+
+.actionIconBtn,
+.actionIcon_darkBtn,
+.actionIcon_darkBtn_ {
+  height: 35px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.actionIcon_darkBtn_ {
+  position: absolute;
+  left: 20px;
+}
+
+.actionIconBtn {
+  background-color: var(--white-color);
+}
+
+.actionIcon_darkBtn,
+.actionIcon_darkBtn_ {
+  background-color: var(--secondary-dark);
+}
+
+.agentComponent {
+  background: #ebf8f1;
+}
+
+.propertyDetail_carousal :global(.slick-dots) {
+  bottom: 50px;
+}
+
+.propertyDetail_carousal :global(.slick-dots li button:before) {
+  font-size: 15px;
+  color: white;
+  opacity: 0.45;
+}
+
+.propertyDetail_carousal :global(.slick-dots li.slick-active button:before) {
+  opacity: 0.9;
+  color: white;
+}
+
+.linkContainer {
+  background: var(--lightBG);
+  margin: 30px 0;
+}
+
+.propertyImg_browchureCarousal {
+  border: 1px solid var(--light-border);
+  border-radius: 4px;
+}
+
+.securityIconCircle {
+  border-radius: 50%;
+  border: 1px solid #ebf8f1;
+  box-shadow: var(--box-shadow-medium);
+}
+.plotArea_select {
+  border: none;
+  background: transparent;
+  width: auto;
+  color: var(--secondary-dark);
+}
+.location_icon {
+  background-color: #e8ffe5;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  cursor: pointer;
+}
+.projectDetails_unitdetails p {
+  font-size: 19px;
+  word-spacing: 5px;
+}
+.details_infoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unitDetail_title {
+  font-size: 20px;
+  color: var(--heading-font-color);
+  font-weight: 500;
+  text-align: center;
+}
+
+.details_infoSection_below {
+  font-size: 16px;
+  color: var(--grey-font-color);
+  text-align: center;
+}
+.details_infoSection_header {
+  font-size: 18px;
+  color: #51565a;
+  font-weight: 500;
+  text-align: center;
+}
+.AboutProjectInfo_gridCol {
+  border-right: 1px solid var(--light-border);
+}
+.projectOverview_section {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--light-border);
+}
+.floor_plan_img {
+  width: 210px;
+  cursor: pointer;
+}
+
+.location_icon_section {
+  flex-grow: 1;
+}
+
+.background_blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102% !important;
+  object-fit: contain;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* .background_blur::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 102% !important;
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0.5;
+  z-index: 2;
+  border: 5px solid blue;
+} */
+
+@media only screen and (max-width: 1200px) {
+  .emi_calculator {
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .send_enquiry_section {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousal_slide_container,
+  .property_CarouselImg,
+  .cardImgSlider :global(.slick-slider),
+  .cardImgSlider :global(.slick-list) {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousal_slide_container {
+    height: 360px;
+  }
+
+  .propertyDetail_carousal video {
+    height: 290px;
+  }
+
+  .ViewPropertyDiv {
+    padding: 25px 20px;
+  }
+
+  .embla__ExploreNeighbour_slide {
+    flex: 0 0 90px;
+  }
+
+  .placeDiv,
+  .send_enquiry_section,
+  .emi_calculator {
+    padding: 12px;
+  }
+
+  .ExploreNeighbourhood {
+    padding: 24px 12px;
+  }
+  .location_icon_section {
+    display: none;
+  }
+  .outerImageUserlogo {
+    width: 100%;
+    height: 150px;
+  }
+}
+.email_section {
+  word-wrap: break-word;
+}
+
+.polyDesign {
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 6% 49%, 0% 0%);
+  background-color: #01a1b9;
+  color: white;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+.ProjectBox {
+  width: 100%;
+  border: 1px solid var(--light-blueBg);
+}
+.property_Overview_class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.grid_property_over {
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.configurationDescription {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.attributeWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attributeWrapper > span {
+  margin-left: 4px;
+}

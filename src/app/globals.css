@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #14d1fa;
+  --secondary-light: #fefefe;
+  --secondary-dark: #1e1e82;
+  --white-color: #ffffff;
+  --light-bg1-color: #f4f6ff;
+  --light-bg2-color: #f0effb;
+  --light-bg3-color: #f9f8ff;
+  --light-green-bg: #d9f4e6;
+  --light-orange-bg: #fff2d9;
+  --heading-font-color: #091e42;
+  --heading-dark-font: #000929;
+  --grey-font-color: #51565a;
+  --lightgrey-font-color: #737373;
+  --primary-green: #1ca345;
+  --info-blue-color: #01a1b9;
+  --error-red-color: #db2b2b;
+  --lightSkyBlue: #daf0ff;
+  --grey: #808080;
+  --primary-blue: #228be6;
+  --lightBG: #f0f9ff;
+  --light-border: #dcddde;
+  --mid-blue-color: #4569e3;
+  --light-blueBg: #eaefff;
+  --black-color: #000000;
+  --box-shadow-small: 0px 2px 4px 0px #00000014;
+  --box-shadow-large: 0px 8px 16px 0px #00000014;
+  --box-shadow-medium: 0px 4px 8px 0px #0000000f;
+  --main-border-radius: 4px;
+  --heading1-font: 54px;
+  --heading2-font: 45px;
+  --heading3-font: 40px;
+  --heading4-font: 32px;
+  --heading5-font: 28px;
+  --heading6-font: 20px;
+  --regular-big-font: 18px;
+  --regular-font: 16px;
+  --regular-small-font: 14px;
+  --small-font: 12px;
+  --bold-font-weight: 700;
+  --semibold-font-weight: 600;
+  --medium-font-weight: 500;
+  --regular-font-weight: 400;
+  --light-font-weight: 300;
+  --line-height-160: 160%;
+  --line-height-140: 140%;
+  --line-height-130: 130%;
+  --line-height-120: 120%;
+  --mainheading-letter-spacing: -3px;
+  --letter-spacing-2: -2px;
+  --letter-spacing-1: -1px;
+  --letter-spacing-medium: -1.5px;
+  --small-letter-spacing: -0.5px;
+  --normal-letter-spacing: 0px;
+  --line-hight-36: 36px;
+  --line-height-28: 28px;
+  --line-height-26: 26px;
+  --main-gap: 8px;
+  --large-border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--white-color);
+  color: var(--grey-font-color);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+dl,
+ol,
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  font-size: 10px;
+}
+
+.link-underlines {
+  text-decoration: underline;
+}
+.errorAbsolute {
+  position: absolute;
+}
+.deleteImageBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}

@@ -1,0 +1,67 @@
+.textInputlabel {
+  color: var(--heading-font-color);
+  font-size: var(--regular-font);
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.textInput {
+  border-color: #dfe5ef;
+  border-radius: 4px;
+  padding: 12px;
+  line-height: 100%;
+  height: auto;
+  font-size: var(--regular-font);
+}
+
+.switchThumb {
+  width: 16px;
+  height: 16px;
+  left: rem(1px);
+
+  input:checked + * > & {
+    left: calc(100% - rem(18px));
+  }
+}
+
+.verifyBox {
+  padding: 7px 10px;
+  border-radius: 4px;
+}
+
+[data-mantine-color-scheme] .inputWrapper[data-error] {
+  --input-color: var(--heading-font-color);
+  --input-placeholder-color: var(--heading-font-color);
+  --input-section-color: var(--heading-font-color);
+}
+
+.textDateInput {
+  padding: 16px 16px 16px 30px;
+}
+.textInputsection {
+  display: none;
+}
+
+.chipLabel {
+  padding: 8px 16px;
+  border-radius: 40px;
+  color: #51565a !important;
+  background: var(--white-color) !important;
+  border: 1px solid #51565a !important;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: -0.5px;
+}
+
+.chipIconWrapper {
+  display: none;
+}
+
+.chipLabel:where([data-checked]) {
+  border-color: #9ab3ea99 !important;
+  background: #d2dcff6b !important;
+  color: var(--secondary-dark) !important;
+  font-weight: var(--medium-font-weight);
+}

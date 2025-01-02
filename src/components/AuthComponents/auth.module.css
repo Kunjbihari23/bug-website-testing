@@ -1,0 +1,19 @@
+/* sign up form css */
+.signUpForm_container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.inputWrapperCheck:where([data-error]) {
+  border-color: var(--mantine-color-gray-4);
+}
+
+.errorAbsolute {
+  position: absolute;
+  margin-left: -50px;
+  margin-top: 3px;
+}
+
+.errorCheckbox {
+  margin-left: -30px;
+}

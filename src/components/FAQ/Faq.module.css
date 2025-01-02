@@ -1,0 +1,59 @@
+.faq_container {
+  background-color: var(--light-bg2-color);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.faq_header {
+  display: flex;
+  padding: 30px 0px;
+  gap: 24px;
+  align-items: center;
+}
+
+.faq_header h5 {
+  padding-top: 20px;
+}
+
+.FAQ_Section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-bg2-color);
+  width: 100%;
+  border-radius: 10px;
+}
+
+.faq_Accordion {
+  margin-bottom: 20px;
+  min-width: 100%;
+}
+
+.accordionItem {
+  width: 100%;
+}
+
+.accordionControl {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq_Accordion_keys {
+  color: var(--grey-font-color);
+  font-size: var(--regular-big-font);
+}
+
+.faq_container_footer p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media screen and (max-width: 568px) {
+  .faq_header {
+    flex-direction: column;
+  }
+}

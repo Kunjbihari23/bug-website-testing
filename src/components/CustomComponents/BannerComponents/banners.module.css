@@ -1,0 +1,278 @@
+.section_container {
+  padding: 40px 0;
+  position: relative;
+}
+
+.stack_full_root {
+  height: 100%;
+}
+
+/* statistic numeric value banner css */
+.StatisticsDetail_container {
+  padding: 80px 0;
+  background-color: var(--secondary-dark);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.stattic_count {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.stattic_box {
+  position: relative;
+  max-width: 250px;
+  min-width: 250px;
+  padding: 20px 40px;
+}
+
+.stattic_box:not(:last-child):before {
+  content: '';
+  position: absolute;
+  height: 64px;
+  width: 1px;
+  background: var(--white-color);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* View Property verified by EasyProps section */
+
+.highlights_sec {
+  background: linear-gradient(180deg, #bae3ff 0%, #4ab4fa 100%);
+  color: var(--heading-font-color);
+  padding: 3rem 0;
+  text-align: center;
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow-large);
+}
+
+/* became genent banner section css */
+.becameAgent_container {
+  background-color: var(--light-bg2-color);
+  display: flex;
+  padding: 20px 20px 20px 32px;
+  border-radius: var(--large-border-radius);
+  align-items: center;
+  box-shadow: var(--box-shadow-large);
+}
+
+.real_estate_inner {
+  background-color: var(--light-bg2-color);
+  display: flex;
+  padding: 20px 20px 20px 32px;
+  border-radius: var(--large-border-radius);
+  align-items: center;
+}
+
+.becameAgent_text_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+  color: var(--heading-font-color);
+}
+
+.becameAgent_text_content h2 {
+  font-size: var(--heading5-font);
+  font-weight: 600;
+  line-height: var(--line-height-28);
+  letter-spacing: var(--normal-letter-spacing);
+  color: var(--heading-font-color);
+  margin-bottom: 8px;
+}
+
+.becameAgent_img {
+  width: 100%;
+  text-align: end;
+  height: 100%;
+}
+
+.becameAgent_img img {
+  width: 100%;
+  margin-left: auto;
+  height: inherit;
+  border-radius: 4px;
+  clip-path: polygon(27% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* register ypur property banner */
+
+.register_property_container {
+  background: linear-gradient(180deg, #bae3ff 0%, #4ab4fa 100%);
+  color: var(--heading-font-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow-large);
+}
+
+.register_property_sec {
+  padding: 3rem;
+}
+
+.register_property_img {
+  width: 100%;
+  height: 391px;
+}
+
+.register_property_img img {
+  width: 100%;
+  height: inherit;
+  border-radius: 4px;
+}
+
+.whatsappIcon {
+  margin: 0 5px -3px 0;
+}
+
+/* advertisement banner section */
+.advertiser_type_inner {
+  background: #bae3ff;
+  padding: 40px;
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow-large);
+}
+
+.advertiser_type_inner h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.advertiser_type_content {
+  padding: 40px;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 0px 4px 4px 0;
+}
+
+.advertiser_type_img {
+  height: 100%;
+}
+
+.advertiser_type_img img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.advertiser_type_box a {
+  border: 1px solid #dcddde;
+  padding: 12px 30px 12px 12px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.advertiser_type_box span {
+  width: 46px;
+  min-width: 46px;
+  height: 46px;
+  background: rgb(115 115 115 / 13%);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+/*Browse top links to search your home css start*/
+.top_links_container {
+  background: var(--lightBG);
+  padding: 24px;
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--box-shadow-small);
+}
+
+.topLinks_listItem {
+  list-style: disc !important;
+}
+
+.CheckPropertyLink {
+  background: var(--secondary-dark);
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+}
+.postPropertyBtnWrapper button {
+  width: 260px;
+}
+@media screen and (max-width: 1200px) {
+  .highlights_sec {
+    padding: 2rem 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .stattic_box:nth-child(even):before {
+    content: none;
+  }
+  .StatisticsDetail_container {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .stattic_box {
+    max-width: 330px;
+    min-width: 330px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .listing_section_container {
+    padding: 30px 20px;
+  }
+  .advertiser_type_inner,
+  .register_property_sec {
+    padding: 30px;
+  }
+
+  .advertiser_type_content {
+    padding: 24px;
+  }
+
+  .becameAgent_img img {
+    clip-path: none;
+  }
+
+  .highlights_sec {
+    padding: 1.5rem 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stattic_box::before {
+    content: none !important;
+  }
+  .StatisticsDetail_container {
+    padding: 40px 0;
+  }
+  .register_property_img {
+    width: 100%;
+    height: auto;
+  }
+  .postPropertyBtnWrapper button {
+    width: 155px;
+    padding: 5px 10px;
+  }
+  .section_container {
+    padding: 20px 0px;
+  }
+  .becameAgent_container {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .advertiser_type_inner {
+    padding: 25px;
+  }
+}

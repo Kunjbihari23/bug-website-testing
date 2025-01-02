@@ -1,0 +1,28 @@
+.footer_bg {
+    background-color: var(--secondary-dark);
+    position: relative;
+    padding: 50px 16px;
+}
+
+.footerImgs img {
+    width: 167px;
+    height: 54px;
+}
+
+@media (max-width: 567px) {
+    .footer_bg {
+        padding: 30px 0px;
+    }
+
+    .footerImgs img,
+    .footerImgs a {
+        width: 150px;
+        height: 42px;
+    }
+
+
+    .socialIcons svg {
+        width: 24px;
+        height: 24px;
+    }
+}

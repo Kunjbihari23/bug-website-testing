@@ -1,0 +1,111 @@
+.primaryBtn {
+  background: var(--secondary-dark);
+  color: var(--white-color);
+  border: 1px solid var(--secondary-dark);
+  border-radius: var(--main-border-radius);
+}
+
+.primaryBtn:hover {
+  background: #1e1e82d8;
+}
+
+.outlineBtn,
+.outlineBtn:hover {
+  background: var(--white-color);
+  color: var(--secondary-dark);
+  border-radius: var(--main-border-radius);
+  border: 1px solid var(--light-border);
+}
+
+.outlineBtn:hover {
+  border: 1px solid var(--secondary-dark);
+}
+
+.lightBtn,
+.lightBtn:hover {
+  background: var(--light-bg1-color);
+  color: var(--secondary-dark);
+  font-weight: 400;
+}
+
+.largePrimaryBtn {
+  height: 61px;
+  padding: 16px 24px;
+}
+
+.largeBtnLabel {
+  font-size: var(--regular-big-font);
+  font-weight: var(--medium-font-weight);
+  line-height: 28.8px;
+  letter-spacing: var(--small-letter-spacing);
+}
+
+.mediumBtnLabel,
+.smallBtnLabel {
+  font-size: var(--regular-font);
+  font-weight: var(--medium-font-weight);
+  line-height: 25.6px;
+  letter-spacing: var(--letter-spacing-1);
+}
+
+.mediumPrimaryBtn {
+  height: 50px;
+  padding: 12px 24px;
+}
+
+.smallPrimaryBtn {
+  height: 42px;
+  padding: 8px 16px;
+}
+
+.extraSmallPrimaryBtn {
+  height: 35px;
+  padding: 8px 16px;
+}
+
+.extraSmallBtnLabel {
+  font-size: var(--small-font);
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: var(--small-letter-spacing);
+}
+
+.btnIconSection {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.smallBtnIconSection {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.itemProperty {
+  padding: 12px 16px;
+  line-height: 1;
+  border-radius: 40px;
+  color: #51565a;
+  border: 1px solid #51565a;
+  transition: all 0.3s ease;
+}
+
+.itemProperty:hover {
+  background: #d2dcff6b;
+  border-color: #9ab3ea99;
+}
+
+.itemProperty.active {
+  border-color: #9ab3ea99;
+  background: #d2dcff6b;
+  color: var(--secondary-dark);
+  font-weight: var(--medium-font-weight);
+}
+
+@media only screen and (max-width: 500px) {
+  .mediumPrimaryBtn {
+    height: 50px;
+    padding: 12px 10px;
+  }
+}

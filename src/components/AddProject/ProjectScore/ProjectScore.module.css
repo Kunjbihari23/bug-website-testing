@@ -1,0 +1,17 @@
+.progressWrapper {
+  border: 1px solid #9ab3ea99;
+  border-radius: 8px;
+  padding: 30px 48px;
+}
+.tracker {
+  cursor: default;
+}
+.thumb {
+  background: #1ca345;
+}
+.labelValue {
+  margin-top: 6px;
+  font-size: var(--regular-small-font);
+  color: #1ca345;
+  background: transparent;
+}

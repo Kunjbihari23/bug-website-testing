@@ -1,0 +1,126 @@
+.headingOne {
+    font-size: var(--heading1-font);
+    line-height: var(--line-height-120);
+    font-weight: var(--semibold-font-weight);
+    letter-spacing: var(--mainheading-letter-spacing);
+}
+
+.headingTwo {
+    font-size: var(--heading2-font);
+    line-height: var(--line-height-120);
+    letter-spacing: var(--letter-spacing-2);
+}
+
+.headingThree {
+    font-size: var(--heading3-font);
+    line-height: var(--line-height-120);
+    letter-spacing: var(--letter-spacing-2);
+}
+
+.headingFour {
+    font-size: var(--heading4-font);
+    line-height: var(--line-height-120);
+    letter-spacing: var(--letter-spacing-medium);
+}
+
+.headingFive {
+    font-size: var(--heading5-font);
+    line-height: var(--line-height-130);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.headingSix {
+    font-size: var(--heading6-font);
+    line-height: var(--line-height-140);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.regularBigFont {
+    font-size: var(--regular-big-font);
+    line-height: var(--line-height-160);
+}
+
+.regularFont {
+    font-size: var(--regular-font);
+    line-height: var(--line-height-160);
+}
+
+.smallFont {
+    font-size: var(--regular-small-font);
+    line-height: var(--line-height-160);
+}
+
+.captionFont {
+    font-size: var(--heading6-font);
+    line-height: var(--line-height-160);
+}
+
+.extraSmallFont {
+    font-size: var(--small-font);
+    line-height: var(--line-height-160);
+}
+
+@media screen and (max-width: 992px) {
+    .headingOne {
+        font-size: 50px;
+    }
+
+    /* }
+
+@media screen and (max-width: 768px) {
+    .headingOne {
+        font-size: 46px;
+    } */
+
+    .headingTwo {
+        font-size: 41px;
+    }
+
+    .headingThree {
+        font-size: 36px;
+    }
+
+    .headingFour {
+        font-size: 28px;
+    }
+
+    .headingFive {
+        font-size: 24px;
+    }
+
+    .headingSix {
+        font-size: 18px;
+    }
+
+    .regularBigFont,
+    .regularFont {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .headingOne {
+        font-size: 42px;
+    }
+
+    .headingTwo {
+        font-size: 36px;
+    }
+
+    .headingThree {
+        font-size: 32px;
+    }
+
+    .headingFour {
+        font-size: 26px;
+    }
+
+    .headingFive {
+        font-size: 22px;
+    }
+
+    .regularFont {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,568 @@
+/* content section  */
+
+.search_breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+}
+.search_breadcrumbs :global(.mantine-Breadcrumbs-separator) {
+  margin: 4px;
+}
+.breadcrumbs_item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title_section {
+  margin: 20px 0px;
+}
+
+.title_section p {
+  padding-top: 10px;
+}
+
+.scroll_container {
+  display: flex;
+  align-items: center;
+}
+
+.scroll_container_outerDiv {
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+
+.scroll_container_filter {
+  width: 15%;
+  text-align: end;
+}
+
+.newBook {
+  clip-path: polygon(100% 0%, 93% 50%, 100% 100%, 0 100%, 7% 51%, 0 0);
+  background: var(--info-blue-color);
+  display: flex;
+  align-items: center;
+  padding: 3px 15px;
+  max-height: 25px;
+}
+
+.newBook p {
+  width: max-content;
+}
+
+.scroll_item {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    0.3s,
+    border-color 0.3s;
+  background-color: transparent;
+  color: var(--grey-font-color);
+}
+
+.selectedScroll_item {
+  border: 1px solid var(--secondary-dark);
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: var(--regular-small-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    0.3s,
+    border-color 0.3s;
+  color: var(--secondary-dark);
+  background-color: transparent;
+}
+
+.scroll_container_scroller {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.scroll_item:hover,
+.selectedScroll_item:hover {
+  background: none;
+  color: var(--grey-font-color);
+}
+
+.scroll_filter {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+}
+
+.filter img {
+  margin-right: 15px;
+}
+
+.scrollBtn {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  max-width: 40px !important;
+  min-width: 40px !important;
+  height: 40px !important;
+  position: relative;
+  border: 1px solid var(--light-border);
+}
+.svgImage_ {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto auto;
+}
+
+/* left filter section  */
+.Search_outer_div {
+  border: 1px solid var(--light-border);
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.applied_filters_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.accordion_header {
+  height: 70px !important;
+}
+
+.verified_properties_subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.verified_prop_btn,
+.verified_prop_btn:hover {
+  background-color: var(--primary-green);
+  color: var(--white-color);
+  margin: 10px 5px;
+}
+
+.applied_filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.clear_all_button,
+.clear_all_button:hover {
+  background-color: transparent;
+  font-weight: 500;
+  color: var(--heading-font-color);
+}
+
+/* property card */
+.card_section {
+  margin: 10px 10px 10px 0px;
+}
+
+.cardTitle_share {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardImgSlider {
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cardImgSlider :global(.slick-dots) {
+  bottom: 10px;
+  color: white;
+}
+
+.cardImgSlider :global(button:before) {
+  color: var(--white-color) !important;
+}
+
+.cardTitle p {
+  margin: 10px 0px;
+}
+.ownerDetail_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.share_like_icons svg {
+  margin: 0px 5px 5px 5px;
+}
+
+.sq_yard_section {
+  margin: 10px 0px;
+  background-color: #dcddde73;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sq_yard_arrow_section {
+  background-color: var(--light-border);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sq_yard_section1,
+.sq_yard_section2,
+.sq_yard_section3 {
+  border-right: 1px solid #dcddde;
+  margin: 7px;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.sq_yard_section3 {
+  border: none;
+}
+
+.sq_yard_section_title {
+  font-weight: 500;
+  color: var(--heading-font-color);
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.sq_yard_section_des {
+  font-size: 12px;
+  font-weight: 300;
+  padding-top: 5px;
+  color: var(--lightgrey-font-color);
+}
+.highlight_btn {
+  border-radius: 5px;
+  border: 1px solid var(--light-border);
+  padding: 13px;
+  background-color: var(--lightBG);
+  color: var(--heading-font-color);
+  font-weight: 300;
+}
+
+.ownerText {
+  display: flex;
+}
+
+.owener_detail_btn button {
+  margin: 5px;
+}
+
+.for_sale_des span {
+  color: var(--heading-font-color);
+}
+
+.highlight_section {
+  padding-top: 8px;
+}
+
+.highlight_section :global(.mantine-Group-root) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ready to move  */
+.move_property_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.viewAll_text_move_property,
+.viewAll_text_interest_read {
+  text-decoration: underline;
+}
+
+.moveProperty_card :global(.mantine-Card-root) {
+  padding: 0 !important;
+  margin-right: 20px;
+}
+
+.moveProperty_cardDetails p {
+  padding: 3px 8px;
+}
+
+.moveProperty_cardDetails img {
+  border-radius: 10px;
+}
+
+.moveProperty_slider img {
+  width: 100%;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.moveProperty_card img {
+  border: 1px solid var(--light-border);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.popular_area_section {
+  background-color: var(--light-bg2-color);
+  border-radius: 5px;
+  padding-bottom: 20px;
+  margin: 30px 0px;
+}
+
+.popular_area_section .move_property_header {
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.popularCities_ {
+  margin-left: 20px;
+}
+
+.popularCities_card {
+  border: 1px solid var(--light-border);
+  margin-right: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.popularCities_card_item {
+  display: flex;
+}
+
+.popularCities_card img {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.popularCities_des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Intearesting_reads_section {
+  background-color: var(--light-bg1-color);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.Intearesting_reads_card {
+  display: flex;
+}
+
+.Intearesting_reads_card img {
+  width: 100%;
+  height: 187px;
+  min-height: 230px;
+  max-height: 230px;
+  border-radius: 5px;
+}
+
+.Intearesting_reads_card p {
+  padding-top: 10px;
+}
+
+.SaleProperty_ {
+  background-color: var(--lightBG);
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.saleProperty_detail_firstItem {
+  border-right: 1px solid var(--light-border);
+  padding: 10px 40px 10px 0px;
+}
+
+.saleProperty_detail_otherItem {
+  border-right: 1px solid var(--light-border);
+  padding: 10px 40px 10px 40px;
+}
+
+.SaleProperty_slider_container {
+  margin: 20px 0px;
+}
+
+.saleProperty_list {
+  padding: 10px;
+}
+
+.saleProperty_list li {
+  list-style-type: disc !important;
+}
+
+.Intearesting_reads_cardDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mediaTopBar {
+  background-color: var(--lightBG);
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.verified_badge {
+  background-color: var(--primary-green);
+  background-color: var(--primary-green);
+  position: absolute;
+  top: 10px;
+  border-radius: 10px;
+  left: 10px;
+  padding: 3px 10px;
+  display: flex;
+  gap: 5px;
+  color: white;
+  align-items: center;
+  font-size: 12px;
+}
+.card_image_container {
+  position: relative;
+}
+.salePropertyWrapper {
+  margin: 50px 0px;
+}
+@media only screen and (max-width: 1400px) {
+  .ownerDetail_section {
+    display: block;
+  }
+
+  .ownerDetail_section div {
+    display: flex;
+    gap: 10px;
+
+    align-items: center;
+  }
+  .owener_detail_btn {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Search_outer_div {
+    padding: 5px;
+  }
+
+  .accordion_header {
+    height: 55px;
+  }
+
+  .verified_properties_subtitle {
+    justify-content: left;
+    flex-direction: row;
+  }
+
+  .Search_outer_div {
+    padding: 10px;
+  }
+
+  .sq_yard_section1,
+  .sq_yard_section2,
+  .sq_yard_section3 {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .search_breadcrumbs {
+    display: inline-block;
+    justify-content: start;
+  }
+
+  .search_breadcrumbs p {
+    padding: 5px 0px;
+  }
+
+  .scroll_container_outerDiv {
+    width: 100%;
+  }
+
+  .scroll_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scroll_container_filter {
+    padding-top: 10px;
+    width: 100%;
+    text-align: start;
+  }
+
+  .sq_yard_section_lastGrid {
+    display: none;
+  }
+  .salePropertyWrapper {
+    margin: 30px 0px;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .sq_yard_section1,
+  .sq_yard_section2,
+  .sq_yard_section3 {
+    border: none;
+  }
+  .ownerDetail_section div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .propertyId_Recommendations {
+    margin: 20px 0px;
+  }
+  .moveProperty_card :global(.mantine-Card-root) {
+    margin-right: 0px;
+  }
+  .Intearesting_reads_card img {
+    height: 190px;
+    min-height: 190px;
+    max-height: 190px;
+  }
+  .salePropertyWrapper {
+    margin: 25px 0px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .moveProperty_slider img {
+    max-height: 200px;
+    min-height: 200px;
+  }
+}
+.email_section {
+  word-wrap: break-word;
+}
+@media only screen and (max-width: 400px) {
+  .Intearesting_reads_card img {
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+  }
+}

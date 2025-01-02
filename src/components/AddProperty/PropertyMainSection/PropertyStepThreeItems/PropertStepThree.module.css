@@ -1,0 +1,8 @@
+.MultiSelectInput :global(.mantine-Input-input){
+  border-color: #dfe5ef;
+  border-radius: 4px;
+  padding: 12px;
+  line-height: 100%;
+  height: auto;
+  font-size: var(--regular-font);
+}

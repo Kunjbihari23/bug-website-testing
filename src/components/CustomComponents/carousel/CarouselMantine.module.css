@@ -1,0 +1,46 @@
+.tabContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: calc(100% - 95px);
+  margin: auto;
+  max-width: calc(100% - 100px);
+}
+
+.pageLing_TabGroup_root {
+  position: relative;
+}
+
+.sectionLinks_Container {
+  background-color: white;
+  margin: auto;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.sectionLinks_Container.sticky_Item_Container {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 85px;
+  box-shadow: var(--box-shadow-small);
+}
+
+.pageLink_tabButton {
+  padding: 12px 14px;
+  font-size: var(--regular-font);
+  color: var(--grey-font-color);
+}
+
+.pageLink_root {
+  max-width: 100%;
+}
+
+.pageLink_tabList {
+  gap: 8px;
+  margin: auto;
+  flex-wrap: nowrap;
+}
+
+.pageLink_tabList::-webkit-scrollbar {
+  width: 0;
+}

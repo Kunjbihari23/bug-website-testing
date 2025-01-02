@@ -1,0 +1,98 @@
+.agentDetail_mainContainer {
+    background: var(--lightBG);
+    overflow-x: hidden;
+}
+
+.agent_detail_sections {
+    padding: 2.5rem 0;
+}
+
+.agentDetail_mainTitle {
+    padding-bottom: 2.5rem;
+}
+
+.agent_tabListBox {
+    background: var(--lightBG);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.agentInfo_tabButton {
+    padding: 20px 14px;
+    font-size: var(--regular-font);
+    color: var(--grey-font-color);
+}
+
+.agentInfo_tabList {
+    gap: 8px;
+}
+
+.areaPill_root {
+    background: var(--lightBG);
+    border: 1px solid var(--light-border);
+    padding: 0 14px;
+}
+
+.areaPill_label {
+    font-size: var(--regular-small-font);
+    font-weight: var(--regular-font-weight);
+    line-height: 28.4px;
+    letter-spacing: var(--small-letter-spacing);
+    color: var(--grey-font-color);
+}
+
+.stack_root {
+    width: calc(100% - 240px);
+}
+
+.agentGrid_inner {
+    align-items: flex-end;
+}
+
+/* property type cars css */
+
+.property_cardImag {
+    position: relative;
+    height: 222px;
+    Width: 100%
+}
+
+.property_cardImag img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.forSaleBadge_Root {
+    background: var(--white-color);
+    color: var(--secondary-dark);
+    padding: 8px;
+    font-size: var(--small-font);
+    font-weight: var(--light-font-weight);
+    border-radius: 20px;
+}
+
+.sale_label {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+
+/* agent contact form container css */
+
+.contact_fomrContainer {
+    background: var(--light-bg2-color);
+    padding: 6rem 0;
+}
+
+@media (max-width: 767px) {
+    .stack_root {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_fomrContainer {
+        padding: 3.5rem 0;
+    }
+}

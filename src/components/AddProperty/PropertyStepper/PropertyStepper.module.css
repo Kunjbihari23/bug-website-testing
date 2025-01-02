@@ -1,0 +1,67 @@
+.separator {
+  height: 2px;
+  border-top: 2px solid #9ab3ea99;
+  border-radius: var(--mantine-radius-xl);
+  background-color: transparent;
+  margin: 0;
+  &[data-active] {
+    border-width: 0;
+    background: var(--secondary-dark);
+  }
+}
+
+.stepIcon {
+  border-color: #9ab3ea99;
+  background-color: white;
+  border-width: 1;
+  font-size: var(--regular-small-font);
+
+  &[data-completed] {
+    border-width: 0;
+    background-color: transparent;
+    background: var(--secondary-dark);
+  }
+
+  &[data-progress] {
+    border-color: transparent;
+    background: var(--secondary-dark);
+    color: white;
+  }
+}
+
+.step {
+  transition: transform 300ms ease;
+  /* flex-direction: column; */
+
+  &[data-progress] .stepLabel {
+    font-size: var(--regular-font);
+    font-weight: var(--medium-font-weight);
+    color: var(--secondary-dark);
+    line-height: 25.6px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 4px;
+  }
+}
+.stepLabel {
+  font-size: var(--regular-font);
+  margin-top: 9px;
+}
+
+/* .stepBody {
+  margin: 0;
+  position: absolute;
+  width: max-content;
+  margin-top: 45px;
+} */
+.textCenter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stepperWrapper {
+  padding: 26px 14px;
+  border: 1px solid #9ab3ea99;
+  border-radius: 8px;
+}

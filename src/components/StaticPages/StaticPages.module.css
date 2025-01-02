@@ -1,0 +1,184 @@
+.about_banner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--secondary-dark);
+  color: white;
+}
+.about_banner p {
+  font-size: 25px;
+}
+.about_section {
+  background-color: var(--light-bg1-color);
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+
+.aboutusDescription p {
+  line-height: 30px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.aboutusDescription p span {
+  color: var(--grey-font-color);
+  padding-left: 2px;
+  font-weight: 400;
+}
+.aboutusDescription h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.list_In_privacy li {
+  list-style: decimal !important;
+  margin-left: 17px;
+  font-size: 15px;
+}
+.contactForm {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Preview Image  */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.noImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.singleImageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.singleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 90vh;
+}
+.mainImageContainer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fullscreen {
+  position: fixed;
+  inset: 0;
+  background-color: black;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreenButton {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation buttons */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.prevButton {
+  left: 1rem;
+}
+
+.nextButton {
+  right: 1rem;
+}
+
+.thumbnailSection {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.thumbnailButton {
+  flex-shrink: 0;
+  width: 6rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.thumbnailButton.activeThumbnail {
+  border-color: #3b82f6;
+}
+
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Accessibility focus */
+.fullscreenButton:focus,
+.navButton:focus,
+.thumbnailButton:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
