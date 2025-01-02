@@ -161,8 +161,8 @@ const Footer = ({ formattedCities = [] }) => {
                     <IconMailFilled size={18} color={white_color} />
                   </Grid.Col>
                   <Grid.Col span={11}>
-                    <Link href={`mailto:${footer?.contactUs?.mail}`}>
-                      <SmallFont color={white_color}>{footer?.contactUs?.mail}</SmallFont>
+                    <Link href={`mailto:enquiry@easyprops.c`}>
+                      <SmallFont color={white_color}>enquiry@easyprops.c</SmallFont>
                     </Link>
                   </Grid.Col>
                 </Grid>

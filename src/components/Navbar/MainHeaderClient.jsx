@@ -416,9 +416,9 @@ function MainHeaderClient({ search, isUserLoggedIn = false, user = {}, isBlue = 
                               key={item.label}
                               onClick={() => handleOptionClick('rentorsell', item)}
                               disabled={
-                                (selectedOptions.other?.label === 'Project' &&
-                                  (item.label === 'Rent' || item.label === 'PG')) ||
-                                (selectedOptions.category?.label === 'Land' && item.label === 'PG')
+                                selectedOptions.other?.label === 'Project' &&
+                                (item.label === 'Rent' || item.label === 'PG')
+                                // || (selectedOptions.category?.label === 'Land' && item.label === 'PG')
                               }
                               rightSection={
                                 selectedOptions.rentorsell.label === item.label ? (
@@ -438,9 +438,9 @@ function MainHeaderClient({ search, isUserLoggedIn = false, user = {}, isBlue = 
                               key={item.label}
                               onClick={() => handleOptionClick('category', item)}
                               disabled={
-                                (selectedOptions.other?.label === 'Project' && item.label === 'Land') ||
-                                (selectedOptions.rentorsell?.label === 'PG' && item.label === 'Land') ||
-                                (item.label === 'Land' && selectedOptions.rentorsell?.label === 'PG')
+                                selectedOptions.other?.label === 'Project' && item.label === 'Land'
+                                // || (selectedOptions.rentorsell?.label === 'PG' && item.label === 'Land')
+                                // || (item.label === 'Land' && selectedOptions.rentorsell?.label === 'PG')
                               }
                               rightSection={
                                 selectedOptions.category?.label === item.label ? (
