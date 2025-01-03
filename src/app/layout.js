@@ -4,14 +4,11 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { Notifications } from '@mantine/notifications';
 import '@mantine/notifications/styles.css';
-import { Inter, Plus_Jakarta_Sans, Poppins } from 'next/font/google';
+import { Plus_Jakarta_Sans, Poppins } from 'next/font/google';
 import './globals.css';
 import '@mantine/dates/styles.css';
 import '@mantine/dropzone/styles.css';
 import NextAuthProvider from '@/lib/NextAuthProvider';
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -40,14 +37,9 @@ export default async function RootLayout({ children }) {
               <Notifications position="top-right" />
               <NprogressProvider>{children}</NprogressProvider>
             </TanstackProvider>
-            {/* <section id="kiwimi-footer">
-            <Footer />
-            </section> */}
           </MantineProvider>
         </NextAuthProvider>
       </body>
-      <GoogleAnalytics gaId="G-YCJ7D8GCBE" />
-      <GoogleTagManager id="AW-10820733422" />
     </html>
   );
 }
