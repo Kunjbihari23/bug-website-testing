@@ -193,18 +193,18 @@ function SearchLeftFilterBar({ onFilter }) {
   };
 
   const VerifiedPropertiesItem = () => {
-    const handleSwitchChange = (event) => {
-      const isEnabled = event.currentTarget.checked;
-      setVerifiedPropertiesEnabled(isEnabled);
+    // const handleSwitchChange = (event) => {
+    //   const isEnabled = event.currentTarget.checked;
+    //   setVerifiedPropertiesEnabled(isEnabled);
 
-      const newParams = new URLSearchParams(searchParams.toString());
-      if (isEnabled) {
-        newParams.set('verified', '1');
-      } else {
-        newParams.delete('verified');
-      }
-      router.push(`${window.location.pathname}?${newParams.toString()}`);
-    };
+    //   const newParams = new URLSearchParams(searchParams.toString());
+    //   if (isEnabled) {
+    //     newParams.set('verified', '1');
+    //   } else {
+    //     newParams.delete('verified');
+    //   }
+    //   router.push(`${window.location.pathname}?${newParams.toString()}`);
+    // };
 
     useEffect(() => {
       const verifiedParam = searchParams.get('verified');
@@ -232,8 +232,8 @@ function SearchLeftFilterBar({ onFilter }) {
               </Button>
               <SmallFont color={lightgrey_font_color}>By EasyProps</SmallFont>
               <Switch
-                checked={verifiedPropertiesEnabled}
-                onChange={handleSwitchChange}
+                // checked={verifiedPropertiesEnabled}
+                // onChange={handleSwitchChange}
                 styles={{
                   track: {
                     cursor: 'pointer',
@@ -381,6 +381,7 @@ function SearchLeftFilterBar({ onFilter }) {
       FURNISHED: searchParams.get('FURNISHED') || null,
     };
 
+    console.log(initialChips, 'initialChips');
     Object.keys(categories).forEach((category) => {
       const paramValues = searchParams.get(category);
 
